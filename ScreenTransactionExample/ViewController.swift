@@ -14,6 +14,11 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    @IBAction func tapCodePresntButton(_ sender: UIButton) {
+        guard let viewController = self.storyboard?.instantiateViewController(identifier: "CodePresentViewController") else {return}
+        viewController.modalPresentationStyle = .fullScreen
+        self.present(viewController, animated: true, completion: nil)
+    }
+    
 }
 
