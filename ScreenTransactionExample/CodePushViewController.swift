@@ -9,6 +9,8 @@ import UIKit
 
 class CodePushViewController: UIViewController {
 
+    @IBOutlet var nameLabel: UILabel!
+    var name: String?
     override func viewDidLoad() {
         super.viewDidLoad()
     }
